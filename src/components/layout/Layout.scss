@@ -1,0 +1,33 @@
+.layout-container {
+  display: grid;
+  grid-template-columns: auto 700px auto;
+  grid-template-rows: 80px auto minmax(60px, auto);
+  height: 100vh;
+
+  .header {
+    grid-column: span 3;
+    margin-bottom: 20px;
+  }
+
+  .sidebar {
+    grid-column: span 1;
+    margin-left: 20px;
+  }
+
+  .body {
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: auto;
+  }
+
+  .right-sidebar {
+    grid-column: span 1;
+  }
+
+  .footer {
+    grid-column: span 3;
+  }
+
+}

@@ -1,0 +1,13 @@
+.post-container {
+  margin-bottom: 30px;
+
+  .card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+   .MuiInput-root {
+      margin-bottom: 10px;
+    }
+  }
+}

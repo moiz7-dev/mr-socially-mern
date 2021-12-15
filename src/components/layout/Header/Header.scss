@@ -1,0 +1,44 @@
+@import "../../../variables.scss";
+
+Header {
+  background-color: $primary;
+  box-shadow: 0 0 10px #000;
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 30px;
+
+    .left {
+      min-width: 30%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      span {
+        margin: auto 30px;
+      }
+
+    }
+
+    .right {
+      width: 80px;
+      display: flex;
+      justify-content: space-between;
+
+      Button {
+        border-radius: 50%;
+        min-width: unset;
+      }
+      
+      Button:active {
+        transform: translateY(2px);
+        .MuiSvgIcon-root {
+          height: 0.80em;
+        }
+      }
+
+    }
+  }
+}
