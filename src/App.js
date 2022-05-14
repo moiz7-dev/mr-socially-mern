@@ -1,10 +1,10 @@
 import "./App.scss";
-import Layout from "./components/layout/Layout";
+import Layout from "./components/Layout/Layout";
 import WebFont from "webfontloader";
 import { useEffect } from "react";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import AddPost from "./components/AddPost/AddPost";
-import Posts from "./components/Posts/Posts";
+import Posts from "./components/Post/Posts/Posts";
+import AddPost from "./components/Post/AddPost/AddPost";
 
 function App() {
   const theme = createTheme({

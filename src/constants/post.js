@@ -1,0 +1,5 @@
+export const ADD_POST_REQUEST = 'ADD_POST_REQUEST';
+export const ADD_POST_SUCCESS = 'ADD_POST_SUCCESS';
+export const ADD_POST_FAIL = 'ADD_POST_FAIL';
+export const ADD_POST_RESET = 'ADD_POST_RESET';
+export const CLEAR_ERRORS = 'CLEAR_ERRORS';

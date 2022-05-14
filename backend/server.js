@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const cloudinary = require("cloudinary");
 const app = require('./app');
 
 // uncaught exception
@@ -15,6 +16,14 @@ process.on('uncaughtException', (err) => {
 mongoose.connect(process.env.LOCAL_DB).then(data => {
     console.log(`Database connected to ${data.connection.host}`);
 }).catch(error => console.log(`DB Connection error! --> ${error}`))
+
+//cloudinary config
+//file upload
+cloudinary.config({
+    cloud_name: process.env.CLOUDINARY_NAME,
+    api_key: process.env.CLOUDINARY_API_KEY,
+    api_secret: process.env.CLOUDINARY_API_SECRET,
+})
 
 const server = app.listen(process.env.PORT, () => {
     console.log('Server running!');
